@@ -46,6 +46,7 @@ elif user_input == "Exit":
 else:
  print("No such command!")
 
+
 def started(operation):
     """
     Task 3: Display a message to indicate that an operation has started.
