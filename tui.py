@@ -9,7 +9,10 @@ def welcome():
     :return: Does not return anything.
     """
     # TODO: Your code here
-
+welcome = ("'Solar Record Management System'")
+x = len(welcome)
+y = '_'
+print(y*x + welcome + y*x)
 
 def menu():
     """
