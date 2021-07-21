@@ -68,7 +68,6 @@ def started(operation):
     """
     # TODO: Your code here
 
-
 operation = "Black Mamba"
 print(f"{operation} has started.")
 
