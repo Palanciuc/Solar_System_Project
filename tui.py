@@ -9,10 +9,13 @@ def welcome():
     :return: Does not return anything.
     """
     # TODO: Your code here
-welcome = ("'Solar Record Management System'")
-x = len(welcome)
+
+
+welcome_msg = "'Solar Record Management System'"
+x = len(welcome_msg)
 y = '_'
-print(y*x + welcome + y*x)
+print(y * x + welcome_msg + y * x)
+
 
 def menu():
     """
@@ -48,6 +51,7 @@ def menu():
         print("No such option!")
         return
 
+
 menu()
 
 
@@ -65,6 +69,12 @@ def started(operation):
     # TODO: Your code here
 
 
+operation = "Black Mamba"
+print(f"{operation} has started.")
+
+started(operation)
+
+
 def completed(operation):
     """
     Task 4: Display a message to indicate that an operation has completed.
@@ -79,6 +89,12 @@ def completed(operation):
     # TODO: Your code here
 
 
+operation = "Red Mamba"
+print(f"{operation} has completed.")
+
+completed(operation)
+
+
 def error(error_msg):
     """
     Task 5: Display an error message.
@@ -91,6 +107,12 @@ def error(error_msg):
     :return: Does not return anything
     """
     # TODO: Your code here
+
+
+error_msg = "Critical water level! Abort mission!"
+print(f"Error! {error_msg}")
+
+error(error_msg)
 
 
 def source_data_path():
