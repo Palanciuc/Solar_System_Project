@@ -30,21 +30,25 @@ def menu():
     :return: None if invalid selection otherwise an integer corresponding to a valid selection
     """
     # TODO: Your code here
-menu = ("Load Data\nProcess Data\nVisualise Data\nSave Data\nExit")
-print(menu)
-user_input = input()
-if user_input == "Load Data":
- print(1)
-elif user_input == "Process Data":
- print(2)
-elif user_input == "Visualise Data":
- print(3)
-elif user_input == "Save Data":
- print(4)
-elif user_input == "Exit":
- print(5)
-else:
- print("No such command!")
+
+    options = ["Load Data", "Process Data", "Visualise Data", "Save Data", "Exit"]
+    print(options)
+    response = input()
+    if response == "Load Data":
+        return int(1)
+    elif response == "Process Data":
+        return int(2)
+    elif response == "Visualise Data":
+        return int(3)
+    elif response == "Save Data":
+        return int(4)
+    elif response == "Exit":
+        return int(5)
+    else:
+        print("No such option!")
+        return
+
+menu()
 
 
 def started(operation):
